@@ -1,0 +1,83 @@
+/*
+	Name: Ryan Hines
+	Due Date: 11/09/2020
+	Professor: Dr. Dong
+	Course: CSCI 4160
+	Test case for alpha
+
+*/
+
+let
+	var a := 2
+	var b := 3
+	var c := "string"
+	var d := nil
+	var e := nil
+	type arr = array of int
+	
+in
+	/* Test Case 1 & 2 */
+	a[0] of 5;
+	arr[c] of 5;
+	
+	/* Test Case 3 & 4 */
+	a := b + c;
+	a := c + b;
+
+	/* Test Case 5, 6, 7 */
+	c <> a;
+	d = c;
+	d <> e;
+
+	/* Test Case 8 & 9 */
+	a > d;		/* one is neither string nor int */
+	a > c;		/* comparing int and string */
+
+	/* Test Case 10, 11, 12, 13, 14 */
+	fnameundefined(a, b);
+	a(b, c);
+	print("test ", " test");
+	print();
+	print(d);
+
+	/* Test Case 15 */
+	a:=c;
+
+	/* Test Case 16, 17, 18 */
+	if c then a else b;
+	if a then d;
+	if a then b else c;
+	
+	/* Test Case 19 */
+	while a do b;
+	
+	/* Test Case 20, 21, 22 */
+	for i:= c to 1 do a := b;
+	for i:= a to c do a := b;
+	for i:= a to c do a;
+	
+	/* Test Case 23, 24, 25 */
+	intarray[a] of 5;
+	c[0];
+	intarray[c] of a;
+	intarray[3]:= c;
+	
+	/* Test Case 27, 28 */	
+	let
+		var a : int := c
+	in
+	end;
+
+	let
+		var a := e
+	in
+	end
+
+	
+
+	
+
+	
+
+
+end
